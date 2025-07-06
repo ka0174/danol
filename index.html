@@ -154,6 +154,13 @@
     margin-left: 20px;
     margin-right: 10px;
   }
+  .game-text2{
+    font-family: "kor2";
+    font-size: 14px;
+    line-height: 24px;
+    word-break: keep-all;
+    margin-right: 10px;
+  }
 
 .this-month{
   transition: transform 0.2s ease;
@@ -209,6 +216,45 @@ transition: all 0.2s ease;
   cursor:url('cursor2.png') -1 -1, auto;
 }
 
+.subs{
+  font-family: "kor2";
+  font-size: 16px;
+  
+  padding-bottom: 0px;
+  margin-bottom: px;
+  line-height: 0px;
+  border-bottom: 1.5px solid black;
+}
+
+.shine {
+  
+  animation: textColorFade 1s infinite linear;
+  transition: color 0.3s;
+}
+
+.fakelink{
+  margin-top: 20px;
+  padding: 10px;
+  padding-top: 13px;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+.fakelink:hover{
+  background-color: black;
+  color: white;
+}
+
+/* 글자 색상 변환 키프레임 */
+@keyframes textColorFade {
+  0%   { color: #FF36D6; }
+  33%  { color: #DFFF00; }
+  66%  { color: #0097FF; }
+  100% { color: #FF36D6; }
+}
+
+
 
   </style>
   
@@ -224,10 +270,10 @@ transition: all 0.2s ease;
       </a>
     <a class="sidetext" href="#tag1" onclick="showContent('home')">다놀?</a>
     <a class="sidetext" href="#" onclick="showContent('section6')">보드게임</a>
-    <a class="sidetext" href="#">커뮤니티</a>
+    
     <a class="sidetext" href="#" onclick="showContent('section4')">비하인드</a>
-    <a class="sidetext" href="#">구독하기</a>
-    <button class="color-fade-button">☞놀친되기♪☜</button>
+    <a class="sidetext" href="#" onclick="showContent('section5')">구독하기</a>
+    <button class="color-fade-button" href="#" onclick="showContent('section5')">☞놀친되기♪☜</button>
   </div>
 
   <div id="home" class="content-section" style="display: block;">
@@ -259,10 +305,34 @@ transition: all 0.2s ease;
     </div>
 
   </div>
+  <div id="section5" 
+class="content-section" style="display: none;">
+<div class="content">
+<div class="list0">
+<p>  구독하기</p>
+</div>
+<div class="game-text2">
+  <p>다놀은 매달 일정 금액을 후원하고 리워드를 받는 구독 제도 '놀친'을 운영 중입니다.</p>
+<p >놀친이 되면 이런 리워드를 받을 수 있어요:</p> 
+<p class="shine">1. 이달의 보드게임</p>
+<p class="shine">2. 비하인드 북</p>
+<p class="shine">3. 보드게임 내 놀친 이름 기재</p>
+<p>구독을 원한다면 아래의 폼을 작성해주세요. 다놀은 여러분의 후원으로 운영됩니다.</p>
+<div class="fakelink">가짜링크</div>
+</div>
+
+
+</div>
+
+</div>
   <div id="section2" class="content-section" style="display: none;">
   <div class="content">
 <img src="./top2.png" width=100%></img>
 <p class="game-text">새로운 사방치기</br>서서 하는 활동적인 놀이인 사방치기에 알까기를 접목해, 앉아서 하는 땅따먹기 전략게임으로 만들었어요. 더 높은 점수의 땅을 차지한 사람이 승리하게 됩니다.</br>
+</br>
+<img class="behind" src="./behind6.png" width="94%"></img>
+      <img class="behind" src="./behind7.png" width="94%"></img>
+      
 </br>
 . . . 설명서 미리보기 . . .</br></br>
 <img src="./book2.png" width=100%>
@@ -274,13 +344,19 @@ transition: all 0.2s ease;
     <div id="section4" class="content-section" style="display: none;">
       <div class="content">
       <img src="./top.png" width=100%></img>
-      <p class="behind-text">사방치기와 어쩌고 알까기</br>
+      <p class="behind-text">사방치기와 알까기</br>
 활동적인 게임인 사방치기를 앉아서 하는 전략게임으로 탈바꿈시켰습니다. ‘땅따먹기'라는 익숙한 룰적 요소와 더불어 기존 사방치기 놀이판의 기하학적인 형태가 매력적인 디자인으로 풀어질 수 있을 것 같아서, 다놀의 첫 번째 게임으로 선정하게 되었어요.</br></br>
 <span class="making">. . . m a k i n g . . .</span><br></br>
-보드게임 판과 상자는 실크스크린으로 인쇄, 덕분에 다놀의 포인트인 쨍한 색감을 낼 수 있었어요...♪</p>
+보드게임 판과 상자는 실크스크린으로 인쇄, 덕분에 다놀의 포인트인 쨍한 색감을 낼 수 있었어요.</p>
+<video class="behind" width="94%" src="video.mp4" autoplay muted loop></video>
       <img class="behind" src="./behind1.png" width="94%"></img>
+      
       <img class="behind" src="./behind2.png" width="94%"></img>
       <img class="behind" src="./behind3.png" width="94%"></img>
+      <img class="behind" src="./behind4.png" width="94%"></img>
+      <img class="behind" src="./behind5.png" width="94%"></img>
+      <img class="behind" src="./behind6.png" width="94%"></img>
+      <img class="behind" src="./behind7.png" width="94%"></img>
       </div>
     </div>
     
